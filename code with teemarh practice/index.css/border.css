@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    color: black;
+}
+section {
+    background: #020024;
+    width: 600px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+section::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 900px;
+    background: linear-gradient(to top, transparent,transparent,rgba(56, 217, 104));
+    animation: rotate 4s linear infinite;
+}
+
+section::after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 900px;
+    background: linear-gradient(to top, transparent,transparent,aquamarine);
+    animation: rotate 4s linear infinite;
+    animation-delay: 2s;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+
+section .border-parent {
+    border-radius: 5px;
+    position: absolute;
+    background: beige;
+    z-index: 1;
+    inset: 5px;
+}
+.border-parent form {
+    padding: 20px;
+    text-transform: capitalize;
+}
+form label {
+    color: black;
+    font-weight: 700;
+}
+form input {
+    padding-right: 35px;
+    background: transparent;
+    border: 1px solid rgba(56, 217, 104);
+    color: black;
+    font-size: 15px;
+    font-style: italic;
+    outline: none;
+}
+.border-parent form .text-area {
+    padding-right: 20px;
+    width: 300px;
+    height: 35px;
+}
+.radio .label {
+    position: relative;
+    left: 7em;
+}
+.pet {
+    padding-right: 20px;
+}
+.movie {
+    margin: 20px;
+    position: relative;
+    left: 8em;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    width: 350px;
+    height: 50px;
+    margin-top: 15px;
+    padding: 10px;
+    text-transform: uppercase;
+    background: rgba(56, 217, 104);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: black;
+    font-weight: 900;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.6), -2px -2px 4px rgba(0,56,0,0.6); 
+}
+select {
+    background: transparent;
+    border: 1px solid rgba(56,217,104);
+    outline: none;
+}
+h1 {
+    position: relative;
+    bottom: 2em;
+
+    font-size: 60px;
+    color: transparent;
+    letter-spacing: 2px;
+    font-style: italic;
+    text-transform: capitalize;
+    background: linear-gradient(to right,rgba(56,217,104),rgb(104, 124, 101));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-box-reflect: below 4px linear-gradient(transparent,rgba(0,0,0,0.8));
+}

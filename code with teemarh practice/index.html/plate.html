@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plate form</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+h1 {
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    text-transform: uppercase;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#000);
+}
+h1 span {
+margin: 0;
+padding: 0;
+position: relative;
+animation: all 2s linear infinite;
+}
+h1 span:nth-child(1) {
+    animation-delay: 0s;
+}
+h1 span:nth-child(2) {
+    animation-delay: 0.25s;
+}
+h1 span:nth-child(3) {
+    animation-delay: 0.5s;
+}
+h1 span:nth-child(4) {
+    animation-delay: 0.75;
+}
+h1 span:nth-child(5) {
+    animation-delay: 1s;
+}
+h1 span:nth-child(6) {
+    animation-delay: 1.25s;
+}
+h1 span:nth-child(7) {
+    animation-delay: 1.52;
+}
+@keyframes all {
+0%, 100% {
+    color: #fff;
+    filter: blur(2px);
+    text-shadow: 0px 0px 50px purple,
+                0px 0px 70px purple,
+                0px 0px 120px purple,
+            0px 0px 160px purple,
+            0px 0px 200px purple,
+            0px 0px 220px purple,
+            0px 0px 250px purple;
+}
+5%, 95% {
+    color: #111;
+    filter: blur(0px);
+    text-shadow: none;
+}
+    
+}
+
+    </style>
+<h1>
+    <span>f</span>
+    <span>a</span>
+    <span>t</span>
+    <span>i</span>
+    <span>m</span>
+    <span>a</span>
+    <span>h</span>
+</h1>
+</body>
+</html>

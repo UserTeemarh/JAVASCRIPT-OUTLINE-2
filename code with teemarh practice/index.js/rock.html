@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, paper, scissors</title>
+</head>
+<body>
+    <p>Rock Paper Scissors</p>
+
+
+    <button onclick="
+    pickFile()
+ 
+
+    console.log(computerMove)
+    let result = '';
+
+    if (computerMove === 'rock') {
+       result = 'Tie.';
+    } else if (computerMove === 'paper') {
+        result = 'you lose';
+    } else if (computerMove === 'scissors') {
+        result = 'you win';
+    }
+
+    alert(`you picked rock, computer picked ${computerMove}. ${result}`);
+    ">Rock</button>
+
+
+    <button onclick="
+    pickKhan();
+    console.log(myComputer);
+
+    let myResult = '';
+    if (myComputer === 'rock') {
+        myResult = 'you win';
+    } else if (myComputer === 'paper') {
+        myResult = 'Tie.'
+    } else if (myComputer === 'scissors' ) {
+        myResult = 'you lose.';
+    }
+    alert(`you picked paper, computer picked ${myComputer}. ${myResult}.`);
+    "
+    >Paper</button>
+
+
+    <button onclick="
+    pickDocument();
+
+    let myOutcome = '';
+ 
+    console.log(myDocument);
+    if (myDocument === 'rock') {
+        myOutcome = 'you lose';
+    } else if (myDocument === 'paper') {
+        myOutcome = 'you win';
+    } else if (myDocument === 'scissors') {
+        myOutcome = 'Tie.';
+    }
+    alert(`You picked scissors, computer picked ${myDocument}. ${myOutcome}`);
+    "
+    >Scissors</button>
+    <script>
+        function pickFile() {
+    const myName = Math.random();
+     let computerMove = '';
+
+    if (myName >= 0 && myName < 1 /3) {
+        computerMove ='rock';
+    } else if (myName >= 1 /3 && myName < 2 /3) {
+        computerMove ='paper'
+    }
+    else if (myName >= 2 / 3 && myName < 1 ) {
+        computerMove = 'scissors';
+    }
+        }
+        const myName = Math.random();
+     let computerMove = '';
+
+    if (myName >= 0 && myName < 1 /3) {
+        computerMove ='rock';
+    } else if (myName >= 1 /3 && myName < 2 /3) {
+        computerMove ='paper'
+    }
+    else if (myName >= 2 / 3 && myName < 1 ) {
+        computerMove = 'scissors';
+    }
+         let myComputer = '';
+        function pickKhan () {
+    const myCame = Math.random();
+   
+
+    if (myCame >= 0 && myCame < 1 / 3) {
+        myComputer ='rock';
+    }
+    else if (myCame >= 1 /3 && myCame < 2 / 3) {
+            myComputer = 'paper';
+    } else if (myCame >= 2 /3 && myCame < 1 ) {
+        myComputer ='scissors';
+    }
+            
+        }
+
+          let myDocument = '';
+        function pickDocument () {
+    const myKhan = Math.random();
+  
+
+    if (myKhan >= 0 && myKhan < 1 / 3) {
+        myDocument = 'rock';
+    } else if (myKhan >= 1 / 3 && myKhan < 2 /3) {
+        myDocument = 'paper';
+    }
+    else if (myKhan >= 2 /3 && myKhan < 1) {
+        myDocument = 'scissors';
+    }
+
+        }
+        console.log('name');
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    display: flex;
+    height: 200vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+.section-1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+::-webkit-scrollbar-thumb {
+    background: green;
+    width: 10px;
+}
+::-webkit-scrollbar {
+    background: yellow;
+    width: 5px;
+}
+
+.parent {
+    width: 500px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    border: 1px solid yellow;
+}
+.parent ul {
+    position: relative;
+    transform-style: preserve-3d;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.6s;
+    overflow-y: scroll;
+}
+.parent ul li {
+    gap: 20px;
+    position: relative;
+    background: aquamarine;
+    width: 450px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 30px 30px 60px rgba(0,0,0,0.5), -30px -30px 60px rgba(0,0,0,0.5);
+    transition: 0.6s;
+    transition-delay: calc(var(--i * 0.6s));
+}
+.parent ul li img {
+    
+border-radius: 50%;}
+.parent ul li:nth-child(1) {
+    transform: translateZ(-75px) translateY(-10px);
+}
+.parent ul li:nth-child(2) {
+    transform: translateZ(75px) translateY(-42px);
+   
+}
+.parent ul li:nth-child(3) {
+    transform: translateZ(150px) translateY(-75px);
+    
+opacity: o.6;   
+}
+.parent ul li:nth-child(4) {
+    transform: translateZ(205px) translateY(-107px);
+}
+.parent ul:hover {
+    gap: 20px;
+}
+.parent ul:hover li {
+    transform: translateZ(0px) translateY(0px);
+    opacity: 1;
+}
+.section-2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+}
+.slide-show {
+    width: 800px;
+    height: 800px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.slide-show ul {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: yellow;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.slide-show ul li {
+    position: relative;
+}

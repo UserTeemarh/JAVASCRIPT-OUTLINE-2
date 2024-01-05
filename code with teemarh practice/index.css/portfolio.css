@@ -1,0 +1,769 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    width: 100vh;
+}
+section {
+    background: rgb(59,34,71);
+    width: 100vh;
+    height: cover;
+}
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: cover;
+    background: rgba(59,34,71,0.7);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-left: 70px;
+    position: relative;
+    letter-spacing: none;
+    color: transparent;
+    text-transform: capitalize;
+}
+header h1::before {
+    content: attr(data-text);
+    border-right: 4px solid rgb(164, 118, 197);
+    -webkit-text-stroke: 1px rgb(164, 118, 197);
+    padding: 10px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    color: white;
+    animation: text 2.5s linear infinite;
+}
+@keyframes text {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+    
+}
+header ul  {
+    display: flex;
+    margin-right: 70px;
+}
+header ul li {
+    margin: 10px;
+    text-align: center;
+    list-style: none;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+header ul li a {
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+header ul li:hover {
+background:rgb(164, 118, 197);
+}
+.section-home {
+    background:  rgb(59,34,71);
+    width: 160vh;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+}
+.section-home .home-page {
+    width: 600px;
+    position: relative;
+left: 45px;
+}
+.section-home .home-page h1 {
+    font-size: 2.5em;
+    line-height: 50px;
+    text-transform: capitalize;
+}
+.section-home .home-page h1 span {
+    color: transparent;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    border-left: 5px solid  rgb(88,41,125);
+    padding: 5px;
+    animation: show 3s ease-in-out infinite;
+}
+@keyframes show {
+    0% {
+        color: transparent;
+        transform: translateX(0px);
+    }
+    20% {
+        color: rgb(88,41,125);
+        transform: translateY(10px);
+        border-left: 5px solid rgb(88,41,125);
+    }
+    40% {
+        color: white;
+        transform: translateY(10px);
+        -webkit-text-stroke: 1px rgb(59,34,71);
+        text-shadow: 6px 6px 20px white;
+        border-left: 5px solid white;
+    }
+    60%,100% {
+        border-left: 5px solid rgb(164, 118, 197);
+        color: rgb(164, 118, 197);
+        transform: translateX(100px);
+    }   
+}
+.section-home .home-page p {
+    font-size: 18px;
+    margin-top: 15px;
+}
+.section-home .home-page .button-before {
+width: 200px;
+height: 60px;
+border-radius: 10px;
+margin-top: 20px;
+position: relative;
+overflow: hidden;
+box-shadow: 20px 20px 40px rgba(0,0,0,0.5),-20px -20px 40px rgba(0,0,0,0.5);
+}
+.section-home .home-page .button-before::before {
+    content: 'hire me';
+position: absolute;
+width: 200px;
+height: 60px;
+background: rgb(164, 118, 197);
+border-radius: 10px;
+z-index: 1;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+text-transform: capitalize;
+font-size: 20px;
+font-weight: 600;
+border: 2px solid rgb(88,41,125);
+box-shadow: 20px 20px 40px rgba(0,0,0,0.5),-20px -20px 40px rgba(0,0,0,0.5);
+transform: translateX(-500px);
+transition: all 2s ease-in-out;
+}
+.home-page .button-parent {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 450px;    
+}
+.section-home .home-page .button-before:hover::before {
+    transform: translateX(0px);
+    }
+.section-home .home-page .button-before button {
+    width: 100%;
+    height: 100%;
+    color: rgb(164, 118, 197);
+    border-radius: 10px;
+    background: transparent;
+     text-transform: capitalize;
+    font-size: 20px;
+   font-weight: 600;
+    border: 2px solid rgb(164, 118, 197);
+}
+.section-home .home-page .button-before button:hover {
+    box-shadow: 20px 20px 40px rgba(0,0,0,0.5), -20px -20px 40px rgba(0,0,0,0.5);
+}
+.section-home .home-page .button-after button {
+    width: 100%;
+    height: 100%;
+    color: rgb(164, 118, 197);
+    border-radius: 10px;
+    background: transparent;
+     text-transform: capitalize;
+    font-size: 20px;
+   font-weight: 600;
+    border: 2px solid rgb(164, 118, 197);
+}
+.section-home .home-page .button-after button {
+    width: 100%;
+    height: 100%;
+    color: rgb(164, 118, 197);
+    border-radius: 10px;
+    background: transparent;
+     text-transform: capitalize;
+    font-size: 20px;
+   font-weight: 600;
+    border: 2px solid rgb(164, 118, 197);
+}
+.section-home .home-page .button-after {
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 20px 20px 40px rgba(0,0,0,0.5),-20px -20px 40px rgba(0,0,0,0.5);
+    }
+    
+.section-home .home-page .button-after::before {
+    content: 'lets chat';
+position: absolute;
+width: 200px;
+height: 60px;
+background: rgb(164, 118, 197);
+border-radius: 10px;
+z-index: 1;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+text-transform: capitalize;
+font-size: 20px;
+font-weight: 600;
+border: 2px solid rgb(88,41,125);
+transform: translateY(-500px);
+transition: all 0.5s ease-in-out;
+}
+.section-home .home-page .button-after:hover::before {
+    transform: translateX(0px);
+    }
+    .section-home .home-page .social-media {
+position: relative;
+top: 15em;
+width: 150px;
+    }
+    .section-home .home-page .social-media ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .section-home .home-page .social-media ul li {
+        list-style: none;
+        font-style: italic;
+        border: 2px solid rgb(164, 118, 197);
+        padding: 10px;
+        width: 40px;
+height: 40px;
+        border-radius: 50%;
+        transition: all 1s ease-in-out;
+    }
+    .section-home .home-page .social-media ul li:hover {
+        background: rgb(164, 118, 197);
+    }
+    .section-home .image-box {
+        width: 400px;
+        height: 400px;
+        background: transparent;
+        position: relative;
+        overflow: hidden;
+        border-top-left-radius: 180px;
+        border-top-right-radius: 170px;
+        border-bottom-left-radius: 150px;
+        border-bottom-right-radius: 120px;
+        transition: all 0.4s ease-in-out;
+    }
+    .section-home .image-box:hover {
+        box-shadow:  30px 30px 60px rgb(164, 118, 197), -30px -30px 60px rgb(88,41,125);
+    }
+    .section-home .image-box::before {
+        content: '';
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        background: transparent;
+        border-top-left-radius: 180px;
+        border-top-right-radius: 170px;
+        border-bottom-left-radius: 150px;
+        border-bottom-right-radius: 120px;
+        box-shadow: 30px 30px 60px rgb(164, 118, 197), -30px -30px 60px rgb(88,41,125);
+        animation: rotate 2s linear infinite;
+    }
+    @keyframes rotate {
+        100% {
+            transform: rotate(360deg);
+        }
+        
+    }
+    .image-box .image-child {
+        width: 400px;
+        height: 450px;
+        background: url(/img/img\ \(2\).png);
+    }
+    .about-section {
+        background:  rgb(88,41,125);
+        width: 160vh;
+        height: 90vh;
+        height: cover;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        padding: 20px;
+    }
+    .about-section .rotating-image {
+        width: 380px;
+        height: 380px;
+        border-radius: 50%;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 15px;
+        overflow: hidden;
+    }
+    .about-section .rotating-image::before {
+        content: '';
+        position: absolute;
+        width: 200px;
+        height: 380px;
+        background: linear-gradient(rgb(59,34,71), rgba(0,0,0,0.0),rgba(0,0,0,0.0),rgba(0,0,0,0.0), rgb(59,34,71));
+        animation: rotate 2s linear infinite;
+    }
+    .about-section .rotating-image span {
+        background: rgb(88,41,125);
+        position: absolute;
+        z-index: 1;
+        inset: 5px;
+        border-radius: 50%;
+    }
+    .about-section .rotating-image img {
+        position: absolute;
+        z-index: 1;
+        width: 330px;
+        height: 330px;
+        background: rgb(59,34,71);
+        border-radius: 50%;
+    }
+    .about-section .me-time  {
+        text-transform: capitalize;
+        font-size: 35px;
+
+    }
+    .about-section h2 span {
+        color: rgb(164, 118, 197);
+    }
+    .about-section .lorem-2 p {
+        position: relative;
+        bottom: 5px;
+        text-align: center;
+        font-size: 15px;
+        font-style: italic;
+
+    }
+    .about-section .read-more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 130vh;
+        height: 200px;
+        padding: 15px;
+        background: transparent;
+        position: relative;
+        overflow: hidden;
+    }
+    .about-section .read-more button {
+        width: 200px;
+        height: 70px;
+        padding: 10px;
+        color: white;
+        border-radius: 10px;
+        background: rgb(164, 118, 197);
+         text-transform: capitalize;
+        font-size: 20px;
+       font-weight: 600;
+        border: 3px solid rgb(59,34,71);
+        position: relative;
+        bottom: 30px;
+        transition: all 0.5s ease-in-out;
+    }
+    .about-section .lorem-2 {
+        width: 90%;
+    }
+    .lorem-2 h2 {
+        text-align: center;
+        margin: 20px;
+        text-transform: capitalize;
+        font-size: 2em;
+    }
+    .about-section .read-more button:hover {
+        box-shadow: 2px 2px 5px rgb(164, 118, 197), -2px -2px 5px rgb(59,34,71);
+    }
+    .about-section .read-more .more-text p {
+        color: white;
+        font-size: 15px;
+        transform: translateX(2000px);
+        transition: all 3s ease-in-out;
+    }
+    .about-section .read-more:hover  p {
+        transform: translateX(0px);
+    }
+    .education-page {
+        background:  rgb(59,34,71);
+        width: 160vh;
+        height: 100vh;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+    }
+    .education-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        padding: 25px;
+    }
+    .education-page h2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+        font-size: 35px;
+    }
+    .education-page h2 span {
+        color: rgb(164, 118, 197);
+    }
+    .education-page .page-1 {
+        margin-top: 20px;
+        width: 70em;
+        height: 70vh;
+        background: transparent;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+    .education-page .page-1 .page-1-1 {
+        width: 30em;
+        height: 170px;
+        background:  transparent;
+        margin-left: 35px;
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-top: 10px;
+        border: 2px solid rgb(164, 118, 197);
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+    .education-page .page-1 .page-1-1:hover {
+        background: rgba(164, 118, 197,0.25);
+    }
+    .page-1-1 ul {
+        padding: 10px;
+    }
+    .page-1-1 ul li {
+        color: rgb(144, 75, 204);
+        font-size: 15px;
+        list-style-type: square;
+    }
+    .page-1-1 h4 {
+        text-transform: capitalize;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+    .page-1-1 p {
+        font-size: 14px;
+    }
+    .page-1 h3 {
+        text-align:  center;
+        text-transform: capitalize;
+        font-size: 25px;
+    }
+    .page-1 .plank {
+        width: 5px;
+        height: 170px;
+        border-right: 1px solid white;
+        margin-right: 20px;
+    }
+    .page-1 .plank::before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: black;
+        border-radius: 50%;
+    }
+    .skills-page {
+        background:  rgb(88,41,125);
+        width: 160vh;
+        height: 80vh;
+        height: cover;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        padding: 10px
+
+    }
+    .skills-page .pro h3 {
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 25px;
+    }
+.skills-page .skills-page-1 {
+    margin-top: 30px;
+    width: 80%;
+    height: 70vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background: transparent;
+}
+.skills-page-1 .html {
+    border: 2px solid rgb(164, 118, 197);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.skills-page-1 .html:hover {
+    background: rgb(164, 118, 197,0.2);
+}
+.skills-page-1 .html .html-child {
+    margin: 10px 10px 30px 10px;
+}
+.skills-page-1 .html ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.skills-page-1 .html ul li {
+    list-style: none;
+    font-size: 20px;
+}
+.skills-page-1  .skills-2 {
+    margin-top: 10px;
+    width: 450px;
+    height: cover;
+    border: 1px solid rgb(164, 118, 197);
+    padding: 3px 3px 3px 0px;
+    border-radius: 5px;
+}
+.skills-page-1  .skills-2 .click-me{
+    width: 435px;
+    height: 15px;
+    background: rgb(164, 118, 197);
+    border-radius: 10px;
+}
+.skills-page h2 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    text-transform: capitalize;
+    font-size: 35px;
+}
+.skills-page h2 span {
+    color: rgb(164, 118, 197);
+}
+.skills-page-1  .skills-3 {
+    margin-top: 10px;
+    width: 450px;
+    height: cover;
+    border: 1px solid rgb(164, 118, 197);
+    padding: 3px 3px 3px 0px;
+    border-radius: 5px;
+}
+.skills-page-1  .skills-3 .click-3{
+    width: 435px;
+    height: 15px;
+    background: rgb(164, 118, 197);
+    border-radius: 10px;
+}
+.skills-page-1  .skills-4 {
+    margin-top: 10px;
+    width: 450px;
+    height: cover;
+    border: 1px solid rgb(164, 118, 197);
+    padding: 3px 3px 3px 0px;
+    border-radius: 5px;
+}
+.skills-page-1  .skills-4 .click-4{
+    width: 350px;
+    height: 15px;
+    background: rgb(164, 118, 197);
+    border-radius: 10px;
+}
+.skills-page-1  .skills-5 {
+    margin-top: 10px;
+    width: 450px;
+    height: cover;
+    border: 1px solid rgb(164, 118, 197);
+    padding: 3px 3px 3px 0px;
+    border-radius: 5px;
+}
+.skills-page-1  .skills-5 .click-5{
+    width: 320px;
+    height: 15px;
+    background: rgb(164, 118, 197);
+    border-radius: 10px;
+}
+.skills-page-1  .skills-6 {
+    margin-top: 10px;
+    width: 450px;
+    height: cover;
+    border: 1px solid rgb(164, 118, 197);
+    padding: 3px 3px 3px 0px;
+    border-radius: 5px;
+}
+.skills-page-1  .skills-6 .click-6{
+    width: 290px;
+    height: 15px;
+    background: rgb(164, 118, 197);
+    border-radius: 10px;
+}
+.contact-page {
+    background:  rgb(59,34,71);
+    width: 160vh;
+    height: 100vh;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.contact-page h2 {
+    text-transform: capitalize;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.contact-page .contact-box {
+    width: 70%;
+    height: 80%;
+    background: transparent;
+padding: 10px;
+}
+.contact-page h2 span {
+    color: rgb(164, 118, 197);
+}
+.contact-box .form-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.contact-box .full {
+background: transparent;
+border: 2px solid rgb(164, 118, 197);
+width: 350px;
+height: 70px;
+border-radius: 10px;
+margin: 12px;
+transition: 0.3s;
+}
+.contact-box .full input {
+width: 100%;
+height: 100%;
+color: white;
+border-radius: 5px;
+padding: 10px;
+border: none;
+outline: none;
+font-size: 20px;
+background: transparent;
+}.contact-box .full:hover {
+    background: rgba(164, 118, 197,0.3)
+}
+.contact-box .area {
+margin-top: 15px;
+    width: 700px;
+    height: 300px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    position: relative;
+    left: 10.3em;
+    border: 2px solid rgb(164, 118, 197);
+}
+.contact-box .area:hover {
+    background: rgba(164, 118, 197,0.3);
+}
+.contact-box .area textarea {
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    text-transform: capitalize;
+    color: white;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.contact-page .send-me {
+    background: transparent;
+    width: 250px;
+    height: 70px;
+    position: relative;
+    left: 18em;
+    top: 3em;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.4s ease-in-out;
+}
+.contact-page .send-me button {
+    position: relative;
+    left: 3.5em;
+    outline: none;
+    border: 2px solid rgba(0,0,0,0.5);
+    color: white;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+}
+footer {
+    background:  rgb(88,41,125);
+    width: 160vh;
+    height: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+footer ul {
+    color: white;
+    width: 150vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    text-transform: capitalize;
+}
+footer ul li {
+    list-style: none;
+    font-size: 13px;
+    font-style: italic;
+}
+
+footer ul li a {
+    color: white;
+}
+    
+
+
+
+    
+
+

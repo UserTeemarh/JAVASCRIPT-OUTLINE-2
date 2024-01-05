@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment</title>
+</head>
+<body>
+   <button  onclick="
+   cartItems = cartItems + 0;
+   console.log(`show quantity: ${cartItems}`)
+    ">show quantity</button>
+
+
+   <button onclick="
+   cartItems ++;
+   console.log(`Cart Items: ${cartItems}`);
+   ">add to cart</button>
+
+
+   <button onclick="
+   cartItems = cartItems + 4;
+   console.log(`Cart Items: ${cartItems}`);
+   ">+4</button>
+   <button onclick="
+   cartItems = cartItems + 5;
+   console.log(`Cart Items: ${cartItems}`);
+   "
+   >+5</button>
+   <button onclick="
+   cartItems = cartItems - 1;
+   console.log(`Cart Items: ${cartItems}`);
+   ">remove from cart</button>
+
+   <button onclick="
+   cartItems = cartItems - 2;
+   console.log(`Cart Items: ${cartItems}`);
+   ">
+    -2
+   </button>
+   <button onclick="
+   cartItems = cartItems - 3;
+   console.log(`Cart Items: ${cartItems}`);
+   ">
+    -3
+   </button>
+    <script>
+        let name = 'fatimah';
+        console.log(`my name is: ${name}`);
+        var cost = 5 + 2 * 3 + 9;
+        console.log(`cost of food: $${cost}`);
+        cost = cost * 0.1;
+        console.log(`cost: ${cost}`);
+        let cartItems = 0;
+    </script>
+</body>
+</html>

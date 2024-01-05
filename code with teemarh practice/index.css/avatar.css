@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: whitesmoke;
+    width: 140vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .coke-parent {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: blue;
+
+}
+.coke-parent span {
+    position: absolute;
+    background: rgb(240,0,26);
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.coke-factory {
+    width: 350px;
+    height: 500px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+section .coke-factory:hover .coke-child {
+    transform: translateX(-0px);
+}
+section .coke-factory .coke-child {
+    background: rgb(240,0,26);
+    width: 350px;
+    height: 480px;
+    position: absolute;
+    z-index: 2;
+    border-radius: 10px;
+    padding: 20px;
+   transform: translateX(-3000px);
+   transition: 0.5s;
+}
+.coke-child h2 {
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+
+}
+.coke-child p {
+    margin-top: 15px;
+    color: white;
+}
+.coke-child button {
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    background: white;
+    font-size: 18px;
+    border-radius: 7px;
+    position: relative;
+    top: 30px;
+    right: 8em;
+}

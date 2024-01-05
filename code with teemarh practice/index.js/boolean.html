@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean and Ifs statement</title>
+</head>
+<body>
+<p>if and else</p>
+<h2>if syntax rules</h2>
+<ul>
+    <li>can be used with variables</li>
+</ul>
+
+    <script>
+        console.log(4 > 10);
+        console.log(10 < 20);
+        console.log(typeof 20 > 2);
+        if (false) {
+            console.log('hola amigos')
+        }
+        else {
+            console.log('adios')
+        }
+        if (15 >= 16) {
+            console.log('you can drive');
+        }
+        else {
+            console.log('you cannot drive');
+        }
+        console.log(3 === 10);
+        if (30 > 18) {
+            console.log('you can cook');
+        } else if (17 > 18) {
+            console.log('you are almost there');
+        } else {
+            console.log('you cannot cook')
+        }
+        const name = 30;
+        console.log(name);
+        console.log(false && true);
+        console.log(true || false);
+        console.log(!false)
+        if (5) {
+            console.log('truthy');
+        }
+        if (0) {
+            console.log('falsy')
+        }
+        const cartQuantity = 10;
+        if (cartQuantity) {
+            console.log('cart has items')
+        }
+        console.log('smile' / 10);
+        const variable1 = undefined;
+        console.log(variable1);
+
+
+
+        /* TERNARY OPERATORS*/
+       let result = 0 ? 'truthy' : 'falsy';
+       console.log(result);
+
+       const currency = 'EUR' || 'USD';
+       console.log(currency);
+    </script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section-1 {
+    width: 79rem;
+    height: 54rem;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-1 h1 {
+    margin: 0;
+    padding: 0;
+    font-size:  10em;
+    font-style: italic;
+}
+h1 span {
+    position: relative;
+    display: table-cell;
+    animation: text 2s linear infinite;
+}
+h1 span:nth-child(1) {
+    animation-delay: 0s;
+}
+h1 span:nth-child(2) {
+    animation-delay: 0.25s;
+}
+h1 span:nth-child(3) {
+    animation-delay: 0.5s;
+}
+h1 span:nth-child(4) {
+    animation-delay: 0.75s;
+}
+h1 span:nth-child(5) {
+    animation-delay: 1s;
+}
+h1 span:nth-child(6) {
+    animation-delay: 1.28s;
+}
+h1 span:nth-child(7) {
+    animation-delay: 1.5s;
+}
+@keyframes text {
+0%, 100% {
+    color: #fff;
+    filter: blur(3px);
+    text-shadow: 0 0 20px purple,
+                0 0 40px purple,
+                0 0 80px purple,
+                0 0 120px purple,
+                0 0 300px purple,
+                0 0 350px purple,
+                0 0 400px purple;
+
+}
+5%, 95% {
+    color: #111;
+    filter: blur(0px);
+    text-shadow: none;
+}
+}
+.section-2 {
+    width: 79rem;
+    height: 54rem;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-2 h2 {
+    text-transform: capitalize;
+    font-size: 10em;
+    margin: 0;
+    padding: 0;
+
+}
+.section-2 h2 span {
+    position: relative;
+   display: table-cell;
+   margin: 0;
+   animation: shadow 2s linear infinite;
+}
+.section-2 h2 span:nth-child(1) {
+    animation-delay: 0s;
+}
+.section-2 h2 span:nth-child(2) {
+    animation-delay: 0.25s;
+}
+.section-2 h2 span:nth-child(3) {
+    animation-delay: 0.5s;
+}
+.section-2 h2 span:nth-child(4) {
+    animation-delay: 0.75;
+}
+.section-2 h2 span:nth-child(5) {
+    animation-delay: 1s;
+}
+.section-2 h2 span:nth-child(6) {
+    animation-delay: 1.25s;
+}
+.section-2 h2 span:nth-child(7) {
+    animation-delay: 1.5s;
+}
+.section-2 h2 span:nth-child(1) {
+    animation-delay: 1.75s;
+}
+@keyframes shadow {
+    0%, 100% {
+        color: #fff;
+        filter: blur(2px);
+        text-shadow:    0 0 40px aquamarine,
+                        0 0 80px aquamarine,
+                        0 0 120px aquamarine,
+                        0 0 180px aquamarine,
+                        0 0 240px aquamarine,
+                        0 0 300px aquamarine,
+                        0 0 360px aquamarine;
+    }
+    5%, 95% {
+        color: #111;
+        filter: blur(0px);
+        text-shadow: none;
+    }
+
+    
+}
+.section-3 {
+width: 79rem;
+height: 54rem;
+position: relative;
+overflow: hidden;
+}
+ul {
+    background: yellow;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+ul li {
+    list-style: none;
+}
+ul li input[type="radio"] {
+    position: relative;
+    z-index: 3;
+    margin: 15px;
+    width: 20px;
+    height: 20px;
+    bottom: 20px;
+}
+ul li .check {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: rotateY(0deg);
+    transform-origin: right;
+    transition: all 0.3s ease-in-out;
+}
+ul li  input[type="radio"]:checked ~ .check {
+    transform: rotateY(90deg);
+    transform-origin: right;
+}
+ul li .check .text {
+    position: relative;
+    bottom: 35em;
+    left: 20em;
+    z-index: 4;
+    background: purple;
+    width: 600px;
+    height: 400px;
+    padding: 20px;
+}

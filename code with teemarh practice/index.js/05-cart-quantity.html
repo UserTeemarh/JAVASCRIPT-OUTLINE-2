@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables</title>
+</head>
+<body>
+    <p>variables</p>
+    <button onclick="
+    cartQuantity = cartQuantity + 0;
+    console.log(`show quantity: ${cartQuantity}`);
+    "
+    >show quantity</button>
+
+
+    <button onclick="
+    if (cartQuantity  >= 10) {
+        alert('The cart is full');
+        }   else {
+    console.log(`cart Quantity: ${cartQuantity}`);
+}
+    " 
+    >add to cart</button>
+    <button onclick="
+    cartQuantity = cartQuantity + 2;
+    console.log(`cart Quantity: ${cartQuantity}`)
+    "
+    >+2</button>
+    <button onclick="
+    cartQuantity = cartQuantity + 3;
+    console.log(`cart Quantity: ${cartQuantity}`)
+    " 
+    >+3</button>
+
+    <button onclick="
+    cartQuantity --;        
+    if(cartQuantity <= 0) {
+        alert('cart is empty');
+    } else {
+        console.log(`cart quantity: ${cartQuantity}`);
+    }
+    "  
+    >Remove from cart</button>
+    <button onclick="cartQuantity = cartQuantity - 2;
+    console.log(`cart Quantity: ${cartQuantity}`);
+    ">-2</button>
+
+    <!-- no 5h -->
+    <p>
+        <button 
+        onclick="
+        calculation = '2';
+        console.log(calculation)
+        "
+        >2</button>
+        <button onclick="
+        calculation = '3';
+        console.log(calculation)
+        ">3</button>
+        <button onclick="
+        calculation = '+';
+        console.log(calculation);
+        ">+</button>
+        <button onclick="
+        calculation = eval(calculation);
+        console.log(calculation);
+        ">=</button>
+    </p>
+ 
+       <script>
+        // n0 5a
+        let myName = 'fatimah';
+        // n0 5b
+        console.log(`my name is ${myName}`);
+        // no 5c
+        let cost = 5 + 2 * 3 + 9;
+        // no 5d
+        console.log(`cost of food: ${cost}`);
+        // no 5e
+        cost = cost * 0.1;
+    //   no 5f
+    console.log(`tax(10%): $${cost * 0.1}`);
+
+    // no g
+    let calculation = '';
+    let cartQuantity = 10;
+
+
+// ifs and else statement assignment;
+
+const hour = 22;
+
+if (hour >= 6 && hour < 12) {
+    console.log('Good Morning');
+} else if(hour >= 13 && hour < 17) {
+    console.log('Good Afternoon');
+} else {
+    console.log('Good Night!')
+}
+// no 2
+const name = 'fatimah';
+if (hour >= 6 && hour < 12 ) {
+    console.log(`Good Morning, ${name}`);
+} else if (hour >= 13 && hour < 17) {
+    console.log(`Good Afternoon, ${name}`);
+} else {
+    console.log(`Good Night, ${name}`);
+}
+// no 3 
+let age = 5;
+if (age <= 6 || age >= 65) {
+    console.log(`Discount`)
+} else {
+    console.log('No discount')
+}
+// no 3 
+const isHoliday = false;
+if ((age <= 6 || age >= 65) && !isHoliday) {
+    console.log('Discount');
+} else {
+    console.log('No discount');
+}
+// no 4 
+const myNumber = Math.random();
+if (myNumber <= 0.5) {
+    guess = 'Heads';
+} else {
+    console.log('Tails')
+}
+// no 5 
+const result = '';
+let guess = 'heads';
+
+
+if (guess === result) {
+    console.log('You win');
+} else {
+    console.log('You lose')
+}
+       </script>
+</body>
+</html>

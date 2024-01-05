@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<style>
+    .container {
+        background-color: black;
+        padding: 10px;
+    }
+    button {
+        padding: 15px;
+    }
+</style>
+<body>
+    <p>
+        <button>6</button>
+        <button>7</button>
+    </p>
+    <p><button>8</button>
+        <button>9   </button>
+    </p>
+    <div class="container">
+        <button onclick="
+        calculation ++;
+        console.log(`${calculation}`);
+            ">1</button>
+
+        <button onclick="
+        calculation = calculation + 2;
+        console.log(`${calculation}`);
+        "
+        >2</button>
+
+        <button onclick="
+        calculation = calculation + 3;
+        console.log(`${calculation}`);
+        ">3</button>
+
+        <button onclick="
+        calculation = calculation  + '+';
+        console.log(`${calculation}`);
+
+        ">+</button>
+        <button onclick="
+        calculation = calculation + 1 + 2 + 3;
+        console.log(`eval: ${calculation}`);
+        ">=</button>
+    </div>
+    <script>
+        var calculation ='';
+    </script>
+</body>
+</html>
